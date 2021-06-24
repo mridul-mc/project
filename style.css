@@ -1,0 +1,113 @@
+body           /* full body */
+{
+    background-color: black;
+    background-size: cover;
+	background-position: center;
+    background-image: url("picture.jpg");
+    padding: 0px;
+	margin: 0px;
+    height: 100vh;
+}
+#header          /* header name i.e: login */
+{
+    color: rgb(0, 81, 255);
+    position: absolute;
+    left: 335px;
+    top: 150px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 112px;
+}
+#name_id          /* user_id filled */
+{
+    position: absolute;
+    left: 17px;
+    top: 75px;
+    width: 300px;
+    height: 40px;
+}
+#ac_pw     /* password filled */
+{
+    position: absolute;
+    left: 17px;
+    top: 170px;
+    width: 300px;
+    height: 40px;
+}
+.input_area      /* input box modification or css */
+{
+    border: 0;
+    background: none;
+    margin: 10px auto;
+    text-align: center;
+    border: 3px solid #ffffff;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+	transition: 0.225s;
+    padding: 4px 5px;
+}
+.input_area:focus /*  input area modification */
+{
+    width: 250px;
+	border-color: rgb(34, 0, 255); 
+}
+.input_area::placeholder   /* placeholder edit area */ 
+{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 50px;
+}
+#log_btn  /* log in button position set*/
+{
+    left: 122px;
+}
+.login           /* login buttion modification or css */
+{
+    border: 0;
+    background: none;
+    margin: 10px auto;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    transition: 0.15s;
+    cursor: pointer;
+    position: absolute;
+    top: 260px;
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    font-size: 16px;
+}
+.login:hover            /* login buttion hover effect */
+{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+.box             /* box css edit */
+{
+	width: 50px;
+	padding: 150px;
+	position: absolute;
+	top: 520px;
+	left: 450px;
+	transform: translate(-50%,-50%);
+	border-radius: 20px;
+	background: rgb(0, 0, 0);
+	text-align: center;
+	border-color: rgb(255, 255, 255);
+}
+#pic  /* picture resize */ 
+{
+    height: 780px;
+    width: 1250px;
+}
+h1       /* forgot password*/
+{
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    top: 335px;
+    left: 105px;    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+}
