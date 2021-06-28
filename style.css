@@ -1,40 +1,32 @@
-body           /* full body */
+*           /* full body */
 {
-    background-color: black;
-    background-size: cover;
-	background-position: center;
-    background-image: url("picture.jpg");
+    background-color: rgb(255, 255, 255);
     padding: 0px;
 	margin: 0px;
-    height: 100vh;
 }
 #header          /* header name i.e: login */
 {
     color: rgb(0, 81, 255);
     position: absolute;
-    left: 335px;
-    top: 150px;
-    font-family: 'Dosis', sans-serif;
-    font-size: 112px;
+    left: 840px;
+    top: 100px;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 90px;
 }
 #name_id          /* user_id filled */
 {
-    position: absolute;
-    left: 17px;
-    top: 75px;
-    width: 300px;
-    height: 40px;
+    top: 70px; 
 }
 #ac_pw     /* password filled */
 {
-    position: absolute;
-    left: 17px;
-    top: 170px;
-    width: 300px;
-    height: 40px;
+    top: 175px;
 }
 .input_area      /* input box modification or css */
 {
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    left: 23px;
     border: 0;
     background: none;
     margin: 10px auto;
@@ -48,7 +40,7 @@ body           /* full body */
 }
 .input_area:focus /*  input area modification */
 {
-    width: 250px;
+    width: 300px;
 	border-color: rgb(34, 0, 255); 
 }
 .input_area::placeholder   /* placeholder edit area */ 
@@ -57,12 +49,9 @@ body           /* full body */
     font-size: 20px;
     padding: 50px;
 }
-#log_btn  /* log in button position set*/
-{
-    left: 122px;
-}
 .login           /* login buttion modification or css */
 {
+    left: 122px;
     border: 0;
     background: none;
     margin: 10px auto;
@@ -74,40 +63,122 @@ body           /* full body */
     transition: 0.15s;
     cursor: pointer;
     position: absolute;
-    top: 260px;
+    top: 270px;
     color: rgb(255, 255, 255);
     padding: 15px 25px;
     font-size: 16px;
 }
 .login:hover            /* login buttion hover effect */
 {
-    background: rgb(255, 255, 255);
-    color: black;
+    background: rgb(0, 0, 0);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
 }
 .box             /* box css edit */
 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 	width: 50px;
-	padding: 150px;
+    height: 100px;
+	padding: 155px;
 	position: absolute;
-	top: 520px;
-	left: 450px;
+	top: 450px;
+	left: 950px;
 	transform: translate(-50%,-50%);
 	border-radius: 20px;
 	background: rgb(0, 0, 0);
 	text-align: center;
 	border-color: rgb(255, 255, 255);
+    margin: 16px;
 }
-#pic  /* picture resize */ 
+.contain
 {
-    height: 780px;
-    width: 1250px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Montserrat',sans-serif;
 }
-h1       /* forgot password*/
+#bg_image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bg_image img
+{
+    max-width: 700px;
+}
+#forgot_pw       /* forgot password*/
 {
     position: absolute;
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     font-size: 16px;
-    top: 335px;
-    left: 105px;    font-family: Arial, Helvetica, sans-serif;
+    top: 360px;
+    left: 105px;   
+    font-family: Arial, Helvetica, sans-serif;
     border: 0;
+}
+
+/* responsive query */
+@media (max-width: 780px)
+{
+    #header          /* header name i.e: login */
+    {
+        position: absolute;
+        left: 75px;
+        top: 3px;
+        font-size: 60px;
+    }
+    .box             /* box css edit */
+    {
+        display: flex;
+        height: 100px;
+        width: 15px;
+        padding: 130px;
+        position: absolute;
+        top: 255px;
+        left: 140px;
+    }
+    .input_area
+    {
+        width: 250px;
+        height: 40px;
+        position: absolute;
+        left: 5px; 
+    }
+    #name_id          /* user_id filled */
+    {
+        top: 50px; 
+    }
+    #ac_pw     /* password filled */
+    {
+        top: 155px;
+    }
+    .container
+    {
+        flex-direction: column-reverse;
+     }
+    #forgot_pw       /* forgot password*/
+    {
+        position: absolute;
+        font-size: 16px;
+        top: 320px;
+        left: 70px;   
+    }
+    .login           /* login buttion modification or css */
+    {
+        position: absolute;
+        top: 240px;
+        left: 80px;
+    }
+    #bg_image img
+    {
+        max-width: 600px;
+        /* background-size: bottom center; */
+    }
 }

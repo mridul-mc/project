@@ -8,34 +8,43 @@
     <title>login page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Quicksand:wght@300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
-    <div id="header"> Login </div>
-    <!--heading-->
-    <form action="backend.py" class="box">
-        <br>
-        <div>
-            <br>
-            <input type="ID" name="Id_name" id="name_id" class="input_area" placeholder="Username">
-            <!----id type box -->
-        </div>
-        <br>
-        <div>
-            <br>
-            <input type="password" name="ac_password" id="ac_pw" class="input_area" placeholder="Password">
-            <!---- password type box -->
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="Login" class="login" id="log_btn">
-            <!---- login buttion -->
-            <a href="#" target="_blank">
-                <h1 id="forgot_pw">Forgot Password</h1>
-            </a>
-        </div>
-    </form>
+    <div id="full_contain" class="contain">
+            <!--heading-->
+            <h1 id="header"> Login </h1>
+
+            <div class="bg_img" id="bg_image">
+                <img src="pic.png" alt="nothing is here">
+            </div>
+
+            <div id="dtl_contain" class="user_contain_dtl">
+                <form action="backend.py" class="box">
+                    
+                    <div id="user_name" class="user_dtl">
+                        <!----id type box -->
+                        <input type="ID" name="Id_name" id="name_id" class="input_area" placeholder="Username">
+                    </div>
+                    
+                    <br>
+
+                    <div id="user_pw" class="user_dtl">
+                        <!---- password type box -->
+                        <input type="password" name="ac_password" id="ac_pw" class="input_area" placeholder="Password">
+                    </div>
+
+                    <br>
+                        <a href="#" target="_blank">
+                            <h1 id="forgot_pw">Forgot Password</h1>
+                        </a>
+                        <!---- login buttion -->
+                        <button id="log_btn" class="login" type="submit">Sign in</button>
+                </form>
+            </div>
+    </div>
 </body>
 
 </html>
